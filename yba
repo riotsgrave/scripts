@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/botisznt/whocares/main/YBA.lua",true))()
