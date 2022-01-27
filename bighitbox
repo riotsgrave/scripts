@@ -15,8 +15,8 @@ for _,v in pairs(game[players]:GetPlayers()) do
 if v.Name ~= plr.Name and v.Character then
 v.Character.LowerTorso.CanCollide = false
 v.Character.LowerTorso.Material = "Neon"
-v.Character.LowerTorso.Size = Vector3.new(20,20,20) -- Change to whatever size you want
-v.Character.HumanoidRootPart.Size = Vector3.new(20,20,20) -- Change to whatever size you want
+v.Character.LowerTorso.Size = Vector3.new(16,16,16) -- Change to whatever size you want
+v.Character.HumanoidRootPart.Size = Vector3.new(16,16,16) -- Change to whatever size you want
 end
 end
 end))
