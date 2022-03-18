@@ -1,5 +1,5 @@
---// User //--
-local user_premium__001 = game.Players.BeforeRiot
+--// Premium User //--
+local user_premium__001 = game.Players.BeforeRiot --// Replace "User101" with your username (NOT DISPLAY) //--
 
 -----------------------------------------------------------------------
 -----------------------------------------------------------------------
