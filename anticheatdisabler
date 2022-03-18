@@ -1,5 +1,5 @@
---// Premium User //--
-local user_premium__001 = game.Players.BeforeRiot --// Replace "User101" with your username (NOT DISPLAY) //--
+--// User //--
+local user_premium__001 = game.Players.BeforeRiot
 
 -----------------------------------------------------------------------
 -----------------------------------------------------------------------
@@ -278,15 +278,16 @@ end)
 
 if game.Players.LocalPlayer == user_premium__001 then
 game:GetService("StarterGui"):SetCore("SendNotification",{
-	Title = "Premium Loaded";
-	Text = "";
+	Title = "Version 2.0";
+	Text = "Checking logs";
 	Time = 10;
 	Icon = "rbxassetid://505845268";
 })
 else
 game:GetService("StarterGui"):SetCore("SendNotification",{
-	Title = "Loaded!";
-	Text = "Version 1";
+	Title = "Version 2.0";
+	Text = "Checking logs";
 	Time = 10;
+	Icon = "rbxassetid://505845268";
 })
 end
