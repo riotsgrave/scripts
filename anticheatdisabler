@@ -278,15 +278,15 @@ end)
 
 if game.Players.LocalPlayer == user_premium__001 then
 game:GetService("StarterGui"):SetCore("SendNotification",{
-	Title = "Version 2.0";
-	Text = "Checking logs";
+	Title = "Premium Loaded";
+	Text = "";
 	Time = 10;
 	Icon = "rbxassetid://505845268";
 })
 else
 game:GetService("StarterGui"):SetCore("SendNotification",{
 	Title = "Version 2.0";
-	Text = "Checking logs";
+	Text = "Checking Logs";
 	Time = 10;
 	Icon = "rbxassetid://505845268";
 })
