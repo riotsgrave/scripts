@@ -350,15 +350,15 @@ end)
 
 if game.Players.LocalPlayer == user_premium__001 then
 game:GetService("StarterGui"):SetCore("SendNotification",{
-	Title = "Riot Premium Loaded!";
-	Text = "";
+	Title = "Premium Loaded!";
+	Text = "Hello Riot!";
 	Time = 10;
 	Icon = "rbxassetid://505845268";
 })
 else
 game:GetService("StarterGui"):SetCore("SendNotification",{
-	Title = "Loaded in!";
-	Text = "Thanks for using RIOT";
+	Title = "Loaded!";
+	Text = "Spys disabled!";
 	Time = 10;
 })
 end
